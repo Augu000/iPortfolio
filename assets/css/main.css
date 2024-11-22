@@ -115,6 +115,9 @@ header.header {
   color: #fff;
   padding: 100px 20px;
 }
+#hero {
+  padding-top: 100px;
+}
 
 .hero h2 {
   font-size: 3rem;
