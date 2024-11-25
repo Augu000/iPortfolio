@@ -6,7 +6,7 @@
   --header-border-light: rgba(0, 0, 0, 0.1);
 
   /* Dark Mode */
-  --background-dark: linear-gradient(90deg, #0f0f0f, #1a1a1a, #000000);
+  --background-dark: black;
   --text-dark: #ffffff;
   --accent-dark: #ff6600;
   --header-border-dark: rgba(255, 255, 255, 0.2);

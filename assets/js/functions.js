@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active");
   });
 });
+
