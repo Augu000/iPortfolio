@@ -2,169 +2,114 @@
 <html lang="lt">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Augustinas Stasiškis - Electronics Engineer</title>
-  <meta name="description" content="Augustinas Stasiškis, Electronics Engineer, Vilnius Tech">
-  <meta name="keywords" content="Electronics Engineer, Vilnius Tech, Engineering Projects, Technology Enthusiast">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body class="index-page">
-
+<body>
   <!-- Header -->
-  <header id="header" class="header dark-background d-flex align-items-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
+  <header id="header" class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="logo">Augustinas Stasiškis</h1>
+      <nav class="navmenu">
+        <ul class="d-flex">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger-menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background text-center">
-      <div class="container">
-        <h1>Augustinas Stasiškis</h1>
-        <p>Electronics Engineer | Technology Enthusiast | Innovator</p>
-      </div>
-    </section>
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="text-center">
+    <h1 class="animate-hero">Augustinas Stasiškis</h1>
+    <p class="subtitle">Electronics Engineer | Innovator | Technology Enthusiast</p>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container section-title">
-        <h2>About Me</h2>
-        <p>I’m Augustinas, a passionate electronics engineer pursuing a Bachelor’s degree at Vilnius Tech.</p>
-      </div>
-      <div class="container">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded" alt="Augustinas Stasiškis">
-          </div>
-          <div class="col-lg-8 content">
-            <h3>Driven by Curiosity and Innovation</h3>
-            <p>
-              I have a deep interest in circuits, microcontrollers, and designing systems that enhance everyday life. My projects often focus on automation, energy efficiency, and IoT (Internet of Things).
-            </p>
-          </div>
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container text-center">
+    <h2>About Me</h2>
+    <p>I’m Augustinas, a passionate electronics engineer pursuing a degree at Vilnius Tech.</p>
+    <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle about-img">
+  </div>
+</section>
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+    <div class="container text-center">
+      <h2>Resume</h2>
+      <p>A brief overview of my education and professional experience.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container text-center">
+      <h2>Portfolio</h2>
+      <p>Examples of my work in IoT and electronics design.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/img/project1.jpg" class="img-fluid rounded project-img" alt="Project 1">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/project2.jpg" class="img-fluid rounded project-img" alt="Project 2">
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/project3.jpg" class="img-fluid rounded project-img" alt="Project 3">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div class="container section-title">
-        <h2>Resume</h2>
-        <p>Below is a brief overview of my educational background, skills, and professional experiences:</p>
-      </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services section">
+    <div class="container text-center">
+      <h2>Services</h2>
+      <ul class="list-unstyled">
+        <li>Custom Circuit Design</li>
+        <li>Microcontroller Programming</li>
+        <li>IoT Integration</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-      <div class="container section-title">
-        <h2>Portfolio</h2>
-        <p>Here are a few projects I've worked on that showcase my expertise in electronics and innovation.</p>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container section-title">
-        <h2>Services</h2>
-        <p>Here’s how I can help you or your organization:</p>
-        <ul>
-          <li>Custom Circuit Design</li>
-          <li>Microcontroller Programming</li>
-          <li>IoT Integration and Automation</li>
-          <li>Consultation on Electronics Projects</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title">
-        <h2>Contact</h2>
-        <p>If you’re interested in collaborating or have any questions, feel free to reach out:</p>
-      </div>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaboration or questions.</p>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
-    <p>© 2024 Augustinas Stasiškis. All Rights Reserved</p>
+    <p>&copy; 2024 Augustinas Stasiškis. All Rights Reserved.</p>
+    <div class="social-icons">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-instagram"></i>
+    </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true, // Animation happens only once
-    });
+  <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
 
-    // Sticky Header with Auto-hide
-    let lastScrollTop = 0;
-    const header = document.getElementById("header");
-
-    window.addEventListener("scroll", function () {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScroll > lastScrollTop && currentScroll > 100) {
-        // Scroll Down: Hide Header
-        header.style.top = "-70px";
-      } else {
-        // Scroll Up: Show Header
-        header.style.top = "0";
-      }
-
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
-    });
-
-    // Mobile Menu Toggle
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuToggle = document.querySelector(".header-toggle");
-      const navMenu = document.querySelector(".navmenu");
-      menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-        menuToggle.classList.toggle("bi-list");
-        menuToggle.classList.toggle("bi-x");
-      });
-    });
-  </script>
-
-  <style>
-    /* Sticky Header */
-    #header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      transition: top 0.3s;
-    }
-
-    /* Smooth AOS Animations */
-    [data-aos] {
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-  </style>
+  <script src="assets/js/functions.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,199 @@
+:root {
+  /* Light Mode */
+  --background-light: linear-gradient(90deg, #ffffff, #f7f7f7); /* Subtle white gradient */
+  --text-light: #333333; /* Dark gray text */
+  --accent-light: #ff6600; /* Vibrant orange for hover effects in light mode */
+  --header-border-light: rgba(0, 0, 0, 0.1); /* Light border for light mode */
+
+  /* Dark Mode */
+  --background-dark: linear-gradient(90deg, #0f0f0f, #1a1a1a, #000000); /* Glossy black gradient */
+  --text-dark: #ffffff; /* Pure white text */
+  --accent-dark: #ff6600; /* Vibrant orange for hover effects in dark mode */
+  --header-border-dark: rgba(255, 255, 255, 0.2); /* Subtle white border for dark mode */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-light);
+  color: var(--text-light);
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition for themes */
+}
+
+/* Glossy Transparent Header */
+.header {
+  background: rgba(0, 0, 0, 0.6); /* Transparent black */
+  backdrop-filter: blur(10px); /* Glass effect for transparency */
+  color: var(--text-dark);
+  padding: 20px 40px; /* Default padding for large size */
+  margin: 0; /* No margin initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  border: 1px solid var(--header-border-dark); /* Subtle white border in dark mode */
+  border-radius: 0; /* No rounding initially */
+  transition: all 0.3s ease-in-out; /* Smooth resizing and margin/padding adjustments */
+}
+
+/* Header on Scroll */
+.header.scrolled {
+  padding: 10px 20px; /* Smaller padding */
+  margin: 10px; /* Adds space around the header */
+  width: calc(100% - 20px); /* Adjust width to account for margins */
+  border-radius: 15px; /* Rounded borders when scrolled */
+  top: 10px; /* Pushes down slightly */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for floating effect */
+}
+
+/* Light Mode Header */
+body.light-mode .header {
+  background: rgba(255, 255, 255, 0.8); /* Transparent white for light mode */
+  color: var(--text-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for light mode */
+  border: 1px solid var(--header-border-light); /* Subtle dark border in light mode */
+}
+
+body.light-mode .header.scrolled {
+  margin: 10px;
+  width: calc(100% - 20px);
+  border-radius: 15px; /* Rounded corners for floating effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* Navigation Menu */
+.navmenu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: var(--text-dark); /* Default: White text for dark mode */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px 15px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+/* Hover Effect: Draw Line Under Item */
+.navmenu a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-dark); /* Vibrant orange for dark mode */
+  transition: width 0.3s ease-in-out;
+}
+
+.navmenu a:hover::after {
+  width: 100%; /* Draw the line on hover */
+}
+
+.navmenu a:hover {
+  color: var(--text-dark); /* Keep text white in dark mode */
+}
+
+/* Light Mode Menu */
+body.light-mode .navmenu a {
+  color: var(--text-light); /* Dark gray text for light mode */
+}
+
+body.light-mode .navmenu a::after {
+  background: var(--accent-light); /* Vibrant orange underline in light mode */
+}
+
+body.light-mode .navmenu a:hover {
+  color: var(--text-light); /* Dark gray on hover in light mode */
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh; /* Ensure full viewport height */
+  background: url('assets/img/hero-bg.jpg') no-repeat center center/cover;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--accent-dark);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Section Styling */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: var(--accent-dark);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  background: var(--text-dark);
+  color: var(--accent-dark);
+}
+
+/* Footer */
+footer {
+  background: var(--background-dark);
+  color: var(--text-dark);
+  padding: 20px 0;
+}
+
+footer .social-icons i {
+  color: var(--accent-dark);
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons i:hover {
+  color: var(--text-dark);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --background-light: linear-gradient(90deg, #0f0f0f, #1a1a1a, #000000); /* Glossy black */
+  --text-light: #ffffff; /* White text for dark mode */
+  --accent-light: #ff6600; /* Orange for hover effects in dark mode */
+  --header-border-light: rgba(255, 255, 255, 0.2); /* White border for dark mode */
+}
+
+.logo{
+  margin: .5rem;
+}
