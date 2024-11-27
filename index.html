@@ -41,17 +41,35 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about section">
-    <div class="container text-center">
-      <h2>About Me</h2>
-      <p>
-        I’m Augustinas Stasiškis, an enthusiastic Electronics Engineer with a strong foundation in IoT, 
-        microcontroller programming, and custom circuit design. Currently pursuing a degree in Electronics Engineering 
-        at Vilnius Tech, I am passionate about solving real-world problems through innovative technological solutions.
-      </p>
-      <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle about-img">
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container">
+    <h2 class="text-center">About Me</h2>
+    <div class="row align-items-center mt-5">
+      <!-- Profile Image -->
+      <div class="col-md-5 text-center">
+        <div class="about-image-wrapper">
+          <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle about-img">
+        </div>
+      </div>
+      <!-- About Text -->
+      <div class="col-md-7">
+        <div class="about-text">
+          <h3>Who I Am</h3>
+          <p>
+            I’m <strong>Augustinas Stasiškis</strong>, an Electronics Engineer with a passion for designing cutting-edge IoT systems, custom circuits, and programming microcontrollers.
+            Currently pursuing my degree at Vilnius Tech, I thrive on combining innovation with practical engineering skills to solve real-world challenges.
+          </p>
+          <p>
+            With hands-on experience in PCB design, IoT integration, and system troubleshooting, I am dedicated to creating solutions that push the boundaries of technology while ensuring simplicity and reliability.
+          </p>
+          <a href="#contact" class="btn btn-primary mt-3">Let’s Collaborate</a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Resume Section -->
   <section id="resume" class="resume section">
@@ -97,16 +115,55 @@
 
   <!-- Services Section -->
   <section id="services" class="services section">
-    <div class="container text-center">
-      <h2>Services</h2>
-      <ul class="list-unstyled">
-        <li><strong>Custom Circuit Design:</strong> Developing tailored PCB layouts and hardware designs.</li>
-        <li><strong>Microcontroller Programming:</strong> Expertise in programming for Arduino, STM32, and ESP32.</li>
-        <li><strong>IoT Integration:</strong> Building IoT solutions for smart homes and industrial applications.</li>
-        <li><strong>Hardware Troubleshooting:</strong> Diagnosing and repairing electronic systems.</li>
-      </ul>
+    <div class="container">
+      <h2 class="text-center">Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="info-card">
+            <h3>Custom Circuit Design</h3>
+            <hr />
+            <p>
+              Developing tailored PCB layouts and hardware designs to meet
+              specific project needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">
+            <h3>Microcontroller Programming</h3>
+            <hr />
+            <p>
+              Expertise in programming for Arduino, STM32, and ESP32, delivering
+              optimized solutions.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-card">
+            <h3>IoT Integration</h3>
+            <hr />
+            <p>
+              Building IoT solutions for smart homes and industrial applications,
+              ensuring seamless connectivity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 offset-md-4">
+          <div class="info-card">
+            <h3>Hardware Troubleshooting</h3>
+            <hr />
+            <p>
+              Diagnosing and repairing electronic systems to ensure optimal
+              performance and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">
