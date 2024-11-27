@@ -133,6 +133,7 @@ body.light-mode .header.scrolled {
   .navmenu ul {
     flex-direction: column;
     gap: 15px;
+    text-align: right;
   }
 
 
