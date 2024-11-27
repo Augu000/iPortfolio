@@ -49,7 +49,7 @@
       <!-- Profile Image -->
       <div class="col-md-5 text-center">
         <div class="about-image-wrapper">
-          <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle about-img">
+          <img src="/assets/img/my-profile-img.jpg" alt="Profile Picture" class="rounded-circle about-img">
         </div>
       </div>
       <!-- About Text -->
@@ -72,46 +72,109 @@
 
 
   <!-- Resume Section -->
-  <section id="resume" class="resume section">
-    <div class="container text-center">
-      <h2>Resume</h2>
-      <p>A brief overview of my education and professional experience.</p>
-      <div>
-        <h3>Education</h3>
-        <p><strong>Vilnius Gediminas Technical University</strong><br>Bachelor of Electronics Engineering<br>2019 - 2024</p>
-        <p><strong>Vilnius Lyceum</strong><br>High School Diploma, Focus on Mathematics and Physics<br>2015 - 2019</p>
+<!-- Resume Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+  <div class="container">
+    <h2 class="text-center">Resume</h2>
+    <p class="text-center">A brief overview of my education and professional experience.</p>
+      <!-- Education Cards -->
+      <div class="col-md-6">
+        <div class="resume-card">
+          <div class="resume-icon">
+            <i class="bi bi-mortarboard"></i>
+          </div>
+          <div class="resume-details">
+            <h3>Vilnius Gediminas Technical University</h3>
+            <p>Bachelor of Electronics Engineering</p>
+            <span class="resume-date">2019 - 2024</span>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>Professional Experience</h3>
-        <p><strong>IoT Solutions Intern</strong><br>Techify Electronics<br>2023 - Present<br>
-          Assisting in the design and implementation of IoT systems for industrial applications.</p>
-        <p><strong>Junior Electronics Technician</strong><br>ElectroSolve Ltd.<br>2021 - 2023<br>
-          Collaborated on PCB designs and troubleshooting electronic devices.</p>
-      </div>
-    </div>
-  </section>
+    <div class="row mt-4">
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio section">
-    <div class="container text-center">
-      <h2>Portfolio</h2>
-      <p>Here are some examples of my work in IoT and electronics design:</p>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="assets/img/project1.jpg" class="img-fluid rounded project-img" alt="IoT Weather Station">
-          <p class="mt-2">IoT Weather Station</p>
+
+      <!-- Experience Cards -->
+      <div class="col-md-6 mt-4">
+        <div class="resume-card">
+          <div class="resume-icon">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <div class="resume-details">
+            <h3>IoT Solutions Intern</h3>
+            <p>Techify Electronics</p>
+            <span class="resume-date">2023 - Present</span>
+            <p class="description">
+              Assisting in the design and implementation of IoT systems for industrial applications.
+            </p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="assets/img/project2.jpg" class="img-fluid rounded project-img" alt="Home Automation System">
-          <p class="mt-2">Home Automation System</p>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/img/project3.jpg" class="img-fluid rounded project-img" alt="Smart Energy Meter">
-          <p class="mt-2">Smart Energy Meter</p>
+      </div>
+      <div class="col-md-6 mt-4">
+        <div class="resume-card">
+          <div class="resume-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+          <div class="resume-details">
+            <h3>Junior Electronics Technician</h3>
+            <p>ElectroSolve Ltd.</p>
+            <span class="resume-date">2021 - 2023</span>
+            <p class="description">
+              Collaborated on PCB designs and troubleshooting electronic devices.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <h2 class="text-center">Portfolio</h2>
+    <p class="text-center">Explore some of my featured projects showcasing my expertise in IoT and electronics design.</p>
+    
+    <div class="row mt-4">
+      <!-- Portfolio Item 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-card">
+          <img src="assets/img/project1.jpg" alt="IoT Weather Station" class="portfolio-img">
+          <div class="portfolio-content">
+            <h3>IoT Weather Station</h3>
+            <hr />
+            <p>Developed a weather monitoring system with IoT sensors and real-time data tracking.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-card">
+          <img src="assets/img/project2.jpg" alt="Home Automation System" class="portfolio-img">
+          <div class="portfolio-content">
+            <h3>Home Automation System</h3>
+            <hr />
+            <p>Designed a smart home solution with automated controls and seamless device integration.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-card">
+          <img src="assets/img/project3.jpg" alt="Smart Energy Meter" class="portfolio-img">
+          <div class="portfolio-content">
+            <h3>Smart Energy Meter</h3>
+            <hr />
+            <p>Created an energy monitoring system for optimizing power usage in residential setups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Services Section -->
   <section id="services" class="services section">
@@ -165,30 +228,66 @@
   </section>
   
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section">
-    <div class="container text-center">
-      <h2>Contact</h2>
-      <p>
-        I’m always open to new opportunities and collaborations. Feel free to reach out to discuss projects or ask questions.
-      </p>
-      <div>
-        <p><strong>Email:</strong> augustinas.stasiskis@example.com</p>
-        <p><strong>Phone:</strong> +370 123 45678</p>
-        <p><strong>Location:</strong> Vilnius, Lithuania</p>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <h2 class="text-center">Contact</h2>
+    <p class="text-center">
+      I’m always open to new opportunities and collaborations. Feel free to reach out to discuss projects or ask questions.
+    </p>
+
+    <div class="row mt-5">
+      <!-- Contact Information -->
+      <div class="col-md-6">
+        <div class="contact-info">
+          <p><i class="bi bi-envelope"></i> <strong>Email:</strong> augustinas.stasiskis@example.com</p>
+          <p><i class="bi bi-phone"></i> <strong>Phone:</strong> +370 123 45678</p>
+          <p><i class="bi bi-geo-alt"></i> <strong>Location:</strong> Vilnius, Lithuania</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form id="contact-form" class="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <p>&copy; 2024 Augustinas Stasiškis. All Rights Reserved.</p>
-    <div class="social-icons">
-      <a href="https://facebook.com/augustinas" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://twitter.com/augustinas" target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="https://instagram.com/augustinas" target="_blank"><i class="bi bi-instagram"></i></a>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container text-center">
+    <div class="footer-content">
+      <p>&copy; 2024 <strong>Augustinas Stasiškis</strong>. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/augustinas" target="_blank" class="social-link">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/augustinas" target="_blank" class="social-link">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://instagram.com/augustinas" target="_blank" class="social-link">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <!-- Theme Toggle Button -->
   <button id="theme-toggle" class="theme-toggle">

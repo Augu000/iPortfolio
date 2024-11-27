@@ -432,3 +432,332 @@ body.dark-mode .info-card p {
     height: 200px;
   }
 }
+
+/* Resume Section Styling */
+.resume {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.resume h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.resume p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Resume Card Styling */
+.resume-card {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.resume-icon {
+  margin: 0 auto;
+  background: #ff6600;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Resume Details */
+.resume-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.resume-details p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.resume-details .resume-date {
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+.resume-details .description {
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-card {
+    padding: 20px 15px;
+  }
+
+  .resume-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .resume-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .resume-details p,
+  .resume-details .description,
+  .resume-details .resume-date {
+    font-size: 0.9rem;
+  }
+}
+
+/* Portfolio Section Styling */
+.portfolio {
+  padding: 60px 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Portfolio Card Styling */
+.portfolio-card {
+  background: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-content {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.portfolio-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.portfolio-content hr {
+  border: none;
+  border-top: 1px solid #ff6600;
+  margin: 10px 0;
+}
+
+.portfolio-content p {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-card {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .portfolio-content p {
+    font-size: 0.95rem;
+  }
+}
+/* Contact Section Styling */
+.contact {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.contact-info {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin-right: 10px;
+}
+
+/* Contact Form Styling */
+.contact-form .form-label {
+  font-weight: 600;
+  color: #333333;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #ff6600;
+  box-shadow: 0px 0px 4px rgba(255, 102, 0, 0.5);
+}
+
+.contact-form button {
+  background-color: #ff6600;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cc5200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    margin-bottom: 20px;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form .form-label {
+    font-size: 0.95rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #000000; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff; /* White background for icons */
+  color: #ff6600; /* Orange icon color for branding */
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer .social-link:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer .social-icons {
+    gap: 10px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer .social-link {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+
