@@ -15,9 +15,14 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: var(--background-light);
-  color: var(--text-light);
+  background: var(--background-dark);
+  color: var(--text-dark);
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body.light-mode {
+  background: var(--background-light); /* Light mode background */
+  color: var(--text-light); /* Light mode text */
 }
 
 .logo{
@@ -74,7 +79,7 @@ body.light-mode .header.scrolled {
 
 .navmenu a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text-);
   font-weight: bold;
   font-size: 1rem;
   padding: 5px 15px;
@@ -635,6 +640,7 @@ body.dark-mode .info-card p {
   margin: 10px 0;
   display: flex;
   align-items: center;
+
 }
 
 .contact-info i {
