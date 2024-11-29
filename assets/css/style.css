@@ -25,6 +25,11 @@ body.light-mode {
   color: var(--text-light); /* Light mode text */
 }
 
+body.light-mode h1, h2, h3, p {
+
+  color: var(--text-light); /* Light mode text */
+}
+
 .logo{
   margin: 0;
 }
@@ -63,6 +68,7 @@ body.light-mode .header {
   border: 1px solid var(--header-border-light);
 }
 
+
 body.light-mode .header.scrolled {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -88,7 +94,7 @@ body.light-mode .header.scrolled {
 }
 
 .navmenu a:hover {
-  color: var(--text-dark);
+  font-size: 13;
 }
 
 .navmenu a::after {
@@ -167,11 +173,6 @@ body.light-mode .header.scrolled {
   }
 }
 
-/* Light Mode Adjustments */
-body.light-mode .navmenu {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-}
 
 body.light-mode .hamburger-menu {
   color: var(--text-light);
@@ -759,5 +760,147 @@ body.dark-mode .info-card p {
     width: 35px;
     height: 35px;
     font-size: 1rem;
+  }
+}
+
+/* Light Mode Text Modifications */
+body.light-mode h1, 
+body.light-mode h2, 
+body.light-mode h3, 
+body.light-mode h4, 
+body.light-mode h5, 
+body.light-mode h6, 
+body.light-mode p, 
+body.light-mode span, 
+body.light-mode a, 
+body.light-mode li {
+  color: var(--text-light); /* Ensure text is visible in light mode */
+}
+
+body.light-mode .info-card h3, 
+body.light-mode .info-card p {
+  color: var(--text-light); /* Ensure info-card text adjusts to light mode */
+}
+
+body.light-mode .about h2, 
+body.light-mode .about h3, 
+body.light-mode .about p {
+  color: var(--text-light); /* Update About section text */
+}
+
+body.light-mode .contact-info p, 
+body.light-mode .contact-form .form-label {
+  color: var(--text-light); /* Contact section text adjustments */
+}
+
+body.light-mode .resume-details h3, 
+body.light-mode .resume-details p, 
+body.light-mode .resume-details .description, 
+body.light-mode .resume-details .resume-date {
+  color: var(--text-light); /* Resume details text adjustments */
+}
+
+body.light-mode .portfolio-content h3, 
+body.light-mode .portfolio-content p {
+  color: var(--text-light); /* Portfolio content text adjustments */
+}
+
+body.light-mode .footer-content p {
+  color: var(--text-dark); /* Footer text adjustments */
+}
+
+
+/* Mobile Navigation Menu */
+.navmenu {
+  display: none; /* Default: hidden */
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: var(--background-dark); /* Default for dark mode */
+  backdrop-filter: blur(10px);
+  padding: 125px 20px;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Light Mode Navigation Menu */
+body.light-mode .navmenu {
+  background: var(--background-light); /* Light mode background */
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Adjust shadow for light mode */
+}
+
+/* Mobile Menu Links */
+.navmenu ul {
+  flex-direction: column;
+  gap: 15px;
+  text-align: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: var(--text-dark); /* Default for dark mode */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Light Mode Links */
+body.light-mode .navmenu a {
+  color: var(--text-light); /* Adjust link color for light mode */
+}
+
+/* Show Menu */
+.navmenu.active {
+  display: flex; /* Show menu when active */
+  animation: slideIn 0.3s ease-in-out;
+}
+
+/* Animation for Menu */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+  display: block; /* Show hamburger button */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-dark); /* Default for dark mode */
+  cursor: pointer;
+}
+
+/* Light Mode Hamburger Button */
+body.light-mode .hamburger-menu {
+  color: var(--text-light); /* Adjust button color for light mode */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1rem; /* Adjust logo size for smaller screens */
+  }
+
+  .navmenu {
+    display: none; /* Hide menu by default */
+  }
+
+  .navmenu ul {
+    gap: 15px;
+  }
+
+  .hamburger-menu {
+    display: block; /* Always show hamburger button on mobile */
   }
 }

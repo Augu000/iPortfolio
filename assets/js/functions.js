@@ -1,15 +1,21 @@
 const themeToggle = document.getElementById('theme-toggle');
+
 themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
   const icon = themeToggle.querySelector('i');
+
   if (document.body.classList.contains('dark-mode')) {
-    icon.classList.remove('bi-sun');
-    icon.classList.add('bi-moon');
-  } else {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode'); // Add light mode
     icon.classList.remove('bi-moon');
     icon.classList.add('bi-sun');
+  } else {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode'); // Add dark mode
+    icon.classList.remove('bi-sun');
+    icon.classList.add('bi-moon');
   }
 });
+
 
 // Anime.js Animation Example
 document.addEventListener('DOMContentLoaded', () => {
