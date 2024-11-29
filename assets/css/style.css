@@ -346,20 +346,19 @@ body.dark-mode .info-card p {
 .about {
   text-align: left;
   padding: 60px 0;
-  background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
-  color: #333333;
+  color: #ffffff;
 }
 
 .about h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333333;
+  color: #ffffff;
 }
 
 .about h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #555555;
+  color: #ffffff;
 }
 
 .about p {
@@ -436,8 +435,7 @@ body.dark-mode .info-card p {
 /* Resume Section Styling */
 .resume {
   padding: 60px 0;
-  background-color: #f7f7f7;
-  color: #333333;
+  color: #ffffff;
 }
 
 .resume h2 {
@@ -532,8 +530,7 @@ body.dark-mode .info-card p {
 /* Portfolio Section Styling */
 .portfolio {
   padding: 60px 0;
-  background-color: #ffffff;
-  color: #333333;
+  color: #ffffff;
 }
 
 .portfolio h2 {
@@ -610,8 +607,7 @@ body.dark-mode .info-card p {
 /* Contact Section Styling */
 .contact {
   padding: 60px 0;
-  background-color: #f7f7f7;
-  color: #333333;
+  color: #ffffff;
 }
 
 .contact h2 {
@@ -623,7 +619,7 @@ body.dark-mode .info-card p {
 .contact p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #666666;
+  color: #ffffff;
 }
 
 .contact-info {
@@ -634,11 +630,11 @@ body.dark-mode .info-card p {
 }
 
 .contact-info p {
+  color: #333333;
   font-size: 1rem;
   margin: 10px 0;
   display: flex;
   align-items: center;
-  color: #333333;
 }
 
 .contact-info i {
@@ -650,7 +646,7 @@ body.dark-mode .info-card p {
 /* Contact Form Styling */
 .contact-form .form-label {
   font-weight: 600;
-  color: #333333;
+  color: #ffffff;
 }
 
 .contact-form .form-control {
