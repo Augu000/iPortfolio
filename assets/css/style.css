@@ -122,14 +122,14 @@ body.light-mode .header.scrolled {
   cursor: pointer;
 }
 
-/* Responsive Adjustments */
+/* Responsive  */
 @media (max-width: 768px) {
   .logo {
-    font-size: 1rem; /* Smaller logo text */
+    font-size: 1rem; 
   }
 
   .navmenu {
-    display: none; /* Hide menu by default */
+    display: none; 
     position: absolute;
     top: 70px;
     right: 0;
